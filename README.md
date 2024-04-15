@@ -1,27 +1,31 @@
-# JornadaMilhas
+# Projeto Jornada Milhas (Em desenvolvimento)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
 
-## Development server
+## Descrição do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O Projeto Jornada Milhas é uma aplicação web desenvolvida com Angular. Este projeto aborda diversos aspectos do desenvolvimento front-end, desde a criação de componentes reutilizáveis, organização da aplicação, implementação de autenticação segura, utilização do Angular Material até a implementação de funcionalidades avançadas e integração com APIs externas.
 
-## Code scaffolding
+## Características do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `Componentização Angular`: O projeto utiliza amplamente os princípios de componentização para criar uma arquitetura de aplicação reutilizável e organizada.
+- `Angular Material`: A interface da aplicação é desenvolvida utilizando o Angular Material, aproveitando seus componentes visuais prontos para criar uma experiência de usuário moderna e atraente.
+- `Ícones com Angular Material`: Ícones são integrados à interface utilizando a biblioteca Angular Material, adicionando elementos visuais significativos e intuitivos.
+- `Variáveis de Ambiente`: Utilização de variáveis de ambiente para configurar e personalizar a aplicação de acordo com diferentes ambientes (desenvolvimento, produção, etc.).
+- `Controle e Validação de Formulários`: Implementação de serviços para controlar e validar formulários, garantindo a integridade e a consistência dos dados inseridos pelos usuários.
+- `Manipulação de Dados de APIs`: Integração com APIs externas para manipular e gerenciar dados dinâmicos, proporcionando uma experiência interativa e atualizada aos usuários.
+- `Técnicas Avançadas do Angular`: Aplicação de conceitos avançados do Angular, como providedIn e cache com shareReplay, para otimizar o desempenho e a eficiência da aplicação.
+- `Autenticação e Autorização`: Implementação de um sistema de autenticação seguro, utilizando token JWT para autorizar e controlar o acesso dos usuários à aplicação.
+- `Controle de Sessão`: Desenvolvimento de funcionalidades para gerenciar e manter a sessão dos usuários, garantindo uma experiência de uso contínua e segura.
+- `Login e Cadastro`: Implementação de páginas de login e cadastro, permitindo que os usuários criem e acessem suas contas de forma intuitiva e segura.
+- `Guarda de Rotas Funcional`: Proteção das rotas da aplicação utilizando a Guarda de Rotas Funcional do Angular, garantindo que apenas usuários autorizados tenham acesso a determinadas áreas e funcionalidades.
+- `Busca de Passagens Aéreas`: Desenvolvimento de uma funcionalidade de busca de passagens aéreas, integrando dados de uma API externa e aplicando filtros avançados para personalizar as opções de pesquisa.
+- `Ciclo de Vida do Angular`: Utilização eficaz do ciclo de vida do Angular para otimizar a aplicação, melhorar o desempenho e garantir uma experiência de usuário fluida.
+- `Programação Reativa com RxJS`: Implementação de programação reativa utilizando RxJS, permitindo uma manipulação eficiente e dinâmica dos dados e eventos na aplicação.
+- `Modularização e Lazy Loading`: Aplicação de técnicas de modularização para organizar o código de forma eficiente e implementação de lazy loading para melhorar o desempenho e a velocidade de carregamento da aplicação.
+- `Interceptors Personalizados`: Criação de interceptors personalizados para manipulação de requisições HTTP, permitindo um gerenciamento flexível e centralizado das operações de rede.
+- `Gerenciamento de Erros`: Implementação de estratégias robustas para gerenciar erros, garantindo que os usuários sejam informados de forma clara e que a aplicação continue funcionando de maneira estável e confiável.
+- `Qualidade de Código com Eslint`: Utilização do Eslint para manter o código Angular limpo, consistente e de alta qualidade, seguindo as melhores práticas e padrões de codificação.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### página Home:
+> Modelo incial da página home que ainda está em desenvolvimento. Até o momento está sendo feita somente a camada visual.
+![jornada-milhas](https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/854b3aa0-1112-45fa-bcbe-969023d94c76)
