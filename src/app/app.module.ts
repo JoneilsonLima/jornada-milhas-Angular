@@ -27,6 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -47,6 +48,7 @@ import { ModalComponent } from './shared/modal/modal.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
 
     /* Angular Material */
     MatToolbarModule,
