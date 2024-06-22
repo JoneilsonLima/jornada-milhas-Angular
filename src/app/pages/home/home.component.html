@@ -7,13 +7,11 @@
   <h2>Promoções</h2>
   <app-form-busca></app-form-busca>
   <div class="card-wrapper">
-    <app-card-busca/>
-    <app-card-busca/>
-    <app-card-busca/>
-    <app-card-busca/>
-    <app-card-busca/>
-    <app-card-busca/>
-    <app-card-busca/>
+
+    @for (promocao of promocoesList; track promocao) {
+      <app-card-busca [promocao]="promocao" />
+    }
+
   </div>
 
   <h2>Depoimentos</h2>
