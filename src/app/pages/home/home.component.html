@@ -16,8 +16,10 @@
 
   <h2>Depoimentos</h2>
   <div class="card-wrapper">
-    <app-card-depoimentos></app-card-depoimentos>
-    <app-card-depoimentos></app-card-depoimentos>
-    <app-card-depoimentos></app-card-depoimentos>
+
+    @for (depoimento of depoimentos; track depoimento) {
+      <app-card-depoimentos [depoimento]="depoimento"></app-card-depoimentos>
+    }
+
   </div>
 </app-container>
