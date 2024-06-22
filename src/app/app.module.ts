@@ -29,6 +29,9 @@ import { provideNativeDateAdapter } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
+
 
 
 
@@ -45,6 +48,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardDepoimentosComponent,
     FormBuscaComponent,
     ModalComponent,
+    DropdownUfComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatInputModule,
     MatDatepickerModule,
-    MatDialogModule
+    MatDialogModule,
+    MatAutocompleteModule
   ],
   providers: [
     provideAnimationsAsync(),
