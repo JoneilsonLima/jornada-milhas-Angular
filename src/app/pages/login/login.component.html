@@ -26,6 +26,14 @@
               type="email"
               placeholder="Digite seu e-mail"
               formControlName="email">
+
+              @if (emailControl.hasError('required')) {
+                <mat-error>O E-mail é obrigatório</mat-error>
+              }
+
+              @if (emailControl.hasError('email')) {
+                <mat-error>E-mail com formato inválido</mat-error>
+              }
           </mat-form-field>
 
           <mat-form-field appearance="outline">
@@ -35,11 +43,13 @@
               type="password"
               placeholder="Digite sua senha"
               formControlName="senha">
+              <mat-error>A Senha é obrigatória</mat-error>
           </mat-form-field>
         </mat-card-content>
 
         <mat-card-actions>
           <button
+            [disabled]="!loginForm.valid"
             mat-flat-button
             color="primary"
             (click)="login()">

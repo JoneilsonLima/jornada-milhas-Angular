@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AutenticacaoService } from '../../core/services/autenticacao.service';
 import { Router } from '@angular/router';
 
@@ -21,6 +21,14 @@ export class LoginComponent implements OnInit {
     this._buildForm();
   }
 
+  get emailControl(): FormControl {
+    return this.loginForm.get('email') as FormControl;
+  }
+
+  get senhaControl(): FormControl {
+    return this.loginForm.get('senha') as FormControl;
+  }
+
   login(): void {
     const {
       email,
@@ -40,8 +48,8 @@ export class LoginComponent implements OnInit {
 
   private _buildForm(): void {
     this.loginForm = this._fb.group({
-      email: [''],
-      senha: ['']
+      email: ['', [Validators.required, Validators.email]],
+      senha: ['', [Validators.required]]
     });
   }
 }
