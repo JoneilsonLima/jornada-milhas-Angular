@@ -33,6 +33,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 
@@ -53,6 +54,7 @@ import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-
     DropdownUfComponent,
     BotaoControleComponent,
     SeletorPassageiroComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
