@@ -16,6 +16,9 @@ export class FormBuscaService {
       origem: [''],
       destino: [''],
       tipo: ['Econômica'],
+      adultos: [1],
+      criancas: [0],
+      bebes: [0]
     });
   }
 
@@ -25,6 +28,31 @@ export class FormBuscaService {
       throw new Error(`FormControl com nome "${nome}" não existe.`);
     }
     return control as FormControl;
+  }
+
+  getDescricaoPassageiros(): string {
+    const {
+      adultos,
+      criancas,
+      bebes
+    } = this.formBusca.value;
+
+    let descricao = ''
+
+    if (adultos && adultos > 0) {
+      descricao += `${adultos} adulto${adultos > 1?'s' : ''}`;
+    }
+
+
+    if (criancas && criancas > 0) {
+      descricao += `${descricao ? ', ': ''}${criancas} criança${criancas > 1 ? 's' : ''}`
+    }
+
+    if (bebes && bebes > 0) {
+      descricao += `${descricao ? ', ' : ''}${bebes} bebê${bebes > 1 ? 's' : ''}`
+    }
+
+    return descricao;
   }
 
   openDialog() {
