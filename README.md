@@ -26,6 +26,9 @@ O Projeto Jornada Milhas é uma aplicação web desenvolvida com Angular. Este p
 - `Gerenciamento de Erros`: Implementação de estratégias robustas para gerenciar erros, garantindo que os usuários sejam informados de forma clara e que a aplicação continue funcionando de maneira estável e confiável.
 - `Qualidade de Código com Eslint`: Utilização do Eslint para manter o código Angular limpo, consistente e de alta qualidade, seguindo as melhores práticas e padrões de codificação.
 
+### Tela de Login:
+<img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/385a55d2-e09a-4b67-b40e-422bb02c6091"/>
+
 ### página Home:
 > Modelo incial da página home que ainda está em desenvolvimento. Até o momento está sendo feita somente a camada visual.
 <img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/3d930ea8-f4f9-4c7b-ace2-6af4a8bd6cc1"/>
