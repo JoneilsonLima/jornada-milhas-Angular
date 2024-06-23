@@ -32,7 +32,7 @@ O Projeto Jornada Milhas é uma aplicação web desenvolvida com Angular. Este p
 
 ### Área de depoimentos:
 > Listagem de depoimentos e rodapé.
-<img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/6a6acf34-325a-4266-9435-a2e3c5305367"/>
+<img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/1cdc21a5-10cf-4b75-b3be-eaf8d5f19c87"/>
 
 ### Modal de formulário:
 <img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/aabc2b7c-4388-4c31-84c8-c2aee6f15944"/>
