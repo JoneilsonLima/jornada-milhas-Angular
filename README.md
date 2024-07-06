@@ -30,7 +30,7 @@ O Projeto Jornada Milhas é uma aplicação web desenvolvida com Angular. Este p
 <img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/385a55d2-e09a-4b67-b40e-422bb02c6091"/>
 
 ### Tela de Cadastro:
-<img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/89053ef7-cc10-40a1-90fd-7a63eb272679" />
+<img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/ac532a74-9cb5-4a5d-84b1-105e4008b8d4" />
 
 ### página Home:
 > Modelo incial da página home que ainda está em desenvolvimento. Até o momento está sendo feita somente a camada visual.
