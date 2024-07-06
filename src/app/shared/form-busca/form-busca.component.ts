@@ -8,10 +8,9 @@ import { FormBuscaService } from '../../core/services/form-busca.service';
 })
 export class FormBuscaComponent {
   constructor(
-    public formBuscaService: FormBuscaService
-  ) {}
+    public formBuscaService : FormBuscaService) {}
 
-  buscar() {
-
+  buscar () {
+    console.log(this.formBuscaService.formBusca.value)
   }
 }

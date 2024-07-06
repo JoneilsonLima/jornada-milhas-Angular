@@ -9,28 +9,32 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatPseudoCheckboxModule, provideNativeDateAdapter } from '@angular/material/core';
+import { MatDividerModule } from '@angular/material/divider';
+import { FormBaseComponent } from './shared/form-base/form-base.component';
+/* Angular Material */
 
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { CardComponent } from './shared/card/card.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ContainerComponent } from './shared/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
 import { CardDepoimentosComponent } from './shared/card-depoimentos/card-depoimentos.component';
 import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatIconModule } from '@angular/material/icon';
-import { MatInputModule } from '@angular/material/input';
-import { provideNativeDateAdapter } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
+import { DropdownUfComponent } from './shared/dropdown-uf/dropdown-uf.component';
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -55,6 +59,7 @@ import { LoginComponent } from './pages/login/login.component';
     BotaoControleComponent,
     SeletorPassageiroComponent,
     LoginComponent,
+    FormBaseComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +78,13 @@ import { LoginComponent } from './pages/login/login.component';
     MatInputModule,
     MatDatepickerModule,
     MatDialogModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatRadioModule,
+    MatDividerModule,
+    MatPseudoCheckboxModule,
+  ],
+  exports: [
+    DropdownUfComponent
   ],
   providers: [
     provideAnimationsAsync(),
