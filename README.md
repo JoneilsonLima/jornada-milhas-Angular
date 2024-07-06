@@ -43,3 +43,26 @@ O Projeto Jornada Milhas é uma aplicação web desenvolvida com Angular. Este p
 ### Modal de Formulário:
 <img src="https://github.com/JoneilsonLima/jornada-milhas-Angular/assets/73480168/aabc2b7c-4388-4c31-84c8-c2aee6f15944"/>
 
+## ⚙️ Como Executar
+
+Para executar a aplicação localmente, siga os passos abaixo:
+
+1. Clone este repositório:
+
+```bash
+  git clone https://github.com/JoneilsonLima/jornada-milhas-Angular.git
+  cd jornada-milhas
+
+```
+
+2. Instale as dependências
+
+```bash
+  npm install
+```
+
+3. Inicie a aplicação
+
+```bash
+  ng serve
+```
