@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UnidadeFederativa } from '../../core/types/type';
+import { FormularioService } from '../../core/services/formulario.service';
 
 @Component({
   selector: 'app-form-base',
@@ -15,7 +16,8 @@ export class FormBaseComponent {
   estadoControl = new FormControl<UnidadeFederativa | null>(null, Validators.required);
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private formularioService: FormularioService
   ) { }
 
   ngOnInit() {
@@ -42,5 +44,7 @@ export class FormBaseComponent {
       confirmarSenha: [null, [Validators.required, Validators.minLength(3)]],
       aceitarTermos: [null, [Validators.requiredTrue]]
     });
+
+    this.formularioService.cadastro = this.cadastroForm;
   }
 }
