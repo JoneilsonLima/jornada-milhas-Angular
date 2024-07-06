@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { UnidadeFederativa } from '../../core/types/type';
 
@@ -8,6 +8,9 @@ import { UnidadeFederativa } from '../../core/types/type';
   styleUrl: './form-base.component.scss'
 })
 export class FormBaseComponent {
+  @Input() perfilComponent!: boolean;
+  @Output('onClickCadastro') onClickCadastroEmitt: EventEmitter<void> = new EventEmitter();
+
   cadastroForm!: FormGroup;
   estadoControl = new FormControl<UnidadeFederativa | null>(null, Validators.required);
 
@@ -16,6 +19,15 @@ export class FormBaseComponent {
   ) { }
 
   ngOnInit() {
+    this._buildForm();
+  }
+
+
+  onClickCadastrar() {
+    this.onClickCadastroEmitt.emit();
+  }
+
+  private _buildForm() {
     this.cadastroForm = this.formBuilder.group({
       nome: [null, Validators.required],
       nascimento: [null, [Validators.required]],

@@ -17,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatPseudoCheckboxModule, provideNativeDateAdapter } from '@angular/material/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { FormBaseComponent } from './shared/form-base/form-base.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 /* Angular Material */
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -38,6 +39,7 @@ import { DropdownUfComponent } from './shared/dropdown-uf/dropdown-uf.component'
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 import { SeletorPassageiroComponent } from './shared/seletor-passageiro/seletor-passageiro.component';
 import { LoginComponent } from './pages/login/login.component';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 
 
@@ -60,6 +62,7 @@ import { LoginComponent } from './pages/login/login.component';
     SeletorPassageiroComponent,
     LoginComponent,
     FormBaseComponent,
+    CadastroComponent,
   ],
   imports: [
     BrowserModule,
@@ -82,6 +85,7 @@ import { LoginComponent } from './pages/login/login.component';
     MatRadioModule,
     MatDividerModule,
     MatPseudoCheckboxModule,
+    MatCheckboxModule
   ],
   exports: [
     DropdownUfComponent

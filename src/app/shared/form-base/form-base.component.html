@@ -5,14 +5,17 @@
         Crie sua conta
       </mat-card-title>
       <section>
-        <div class="acoesPerfil">
-          <h2>Dados pessoais</h2>
-          <button mat-stroked-button color="primary">
-            <mat-icon>logout</mat-icon>
-            DESLOGAR
-          </button>
-        </div>
+        @if (perfilComponent) {
+          <div class="acoesPerfil">
+            <h2>Dados pessoais</h2>
+            <button mat-stroked-button color="primary">
+              <mat-icon>logout</mat-icon>
+              DESLOGAR
+            </button>
+          </div>
+        }
       </section>
+
       <mat-card-content>
         <div class="grid-container">
           <mat-form-field appearance="outline" class="full-width">
@@ -68,10 +71,15 @@
           </div>
         </div>
       </mat-card-content>
-      <mat-divider></mat-divider>
-      <div class="acessoPerfil">
-        <h2>Dados de acesso</h2>
-      </div>
+
+      @if (perfilComponent) {
+        <mat-divider></mat-divider>
+
+        <div class="acessoPerfil">
+          <h2>Dados de acesso</h2>
+        </div>
+      }
+
       <mat-card-content>
         <div class="grid-container">
           <div class="grid-item">
@@ -107,10 +115,12 @@
           Você precisa aceitar os termos e condições para efetuar o cadastro
         </mat-error>
       </mat-card-content>
+
       <mat-card-actions class="full-width">
         <button mat-flat-button
           [disabled]="cadastroForm.invalid"
           color="primary"
+          (click)="onClickCadastrar()"
         >CADASTRAR
         </button>
       </mat-card-actions>
